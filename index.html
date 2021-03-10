@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta http-equiv="content-type" content="text/html" charset="utf-8">
+    <title>Projeto 1 - Gabriel Luís Lopes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css" media="screen">
+      body{
+        background-image: url("fundomegalu1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0;
+        letter-spacing: 0.1px;
+        font-weight: 300;
+      }
+      @font-face {
+        font-family: "Oswald-ExtraLight";
+        src: url('Oswald-ExtraLight.ttf');
+      }
+      .caixacabeçalho{
+        height: 97px;
+        width: 100%;
+        background-color: gray;
+        opacity: 0.2;
+      }
+      .Logo{
+        position: fixed;
+        margin-left: 75px;
+        margin-top: -87px;
+        opacity: 1;
+      }
+      .menu{
+        position: fixed;
+        left: 50%;
+        top: 0;
+      }
+      .menu ul{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+      .menu li{
+        display: inline;
+        position: relative;
+      }
+      .menu a{
+        padding: 5px 15px;
+        font-size: 15px;
+        display: inline-block;
+        color: #ffffff;
+        text-decoration: none;
+        line-height: 97px;
+      }
+      .menu ul li a:hover{
+        color: #ff0000;
+      }
+      .menu li ul{
+        position: absolute;
+        left: 0px;
+        top: 50px;
+        display: none;
+      }
+      .menu li:hover ul{
+        display: block;
+      }
+      .menu li ul li{
+        display: block;
+      }
+      .menu li ul a{
+        width: 175px;
+        height: 25px;
+        border-top: 0.1px solid white;
+        color: white;
+        background-color: black;
+        font-size: 13px;
+        line-height: 25px;
+      }
+      .menu li ul a:hover{
+        background-color: #e05600;
+        color: white;
+      }
+      .caixatexto{
+        position: absolute;
+        top: 290px;
+        width: 86%;
+        height: 165px;
+        margin-left: 75px;
+        border-top: 0.5px solid white;
+        border-bottom: 0.5px solid white;
+        text-align: center;
+        line-height: 82.5px;
+      }
+      h1{
+        font-size: 65px;
+        color: white;
+      }
+      p{
+        position: absolute;
+        top: 480px;
+        left: 300px;
+        color: white;
+        font-size: 20px;
+        opacity: 0.5;
+      }
+      .Logomobile{
+        display: none;
+      }
+      #serviços a{
+        position: fixed;
+        top: 580px;
+        left: 600px;
+        width: 125px;
+        height: 40px;
+        border: 2px solid white;
+        text-align: center;
+        line-height: 40px;
+        color: white;
+        text-decoration: none;
+      }
+      #serviços a:hover{
+        background-color: white;
+        color: black;
+      }
+      #contato a{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+      }
+      #contato img{
+        max-width: 75px;
+        max-height: 75px;
+        width: auto;
+        height: auto;
+      }
+      .menuMobile{
+        display: none;
+      }
+      .wrapper{
+        max-width: 1366px;
+        margin: 0 auto;
+      }
+      @media only screen and (min-width: 360px) and (max-width: 414px) {
+        .menu{
+          display: none;
+        }
+        .caixacabeçalho{
+          width: 100%;
+          height: 63px;
+          background-color: white;
+          opacity: 1;
+        }
+        .Logo{
+          display: none;
+        }
+        .Logomobile{
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 30px;
+        }
+        .caixatexto{
+          position: absolute;
+          top: 190px;
+          width: 300px;
+          height: 157px;
+          margin-left: 30px;
+          border-top: 0.5px solid white;
+          border-bottom: 0.5px solid white;
+          text-align: center;
+          line-height: 40px;
+        }
+        h1{
+          font-size: 30px;
+          margin-top: 37px;
+        }
+        p{
+          position: absolute;
+          top: 360px;
+          left: 7px;
+          color: white;
+          font-size: 21px;
+          opacity: 0.7;
+          text-align: center;
+          line-height: 35px;
+        }
+        body{
+          background-image: url('desk_bgr_dark-1-mobile-min.jpg');
+          background-size: auto;
+          background-repeat: no-repeat;
+        }
+        #serviços a{
+          position: fixed;
+          top: 520px;
+          left: 120px;
+          width: 125px;
+          height: 40px;
+          border: 2px solid white;
+          text-align: center;
+          line-height: 40px;
+          color: white;
+          text-decoration: none;
+        }
+        #contato{
+          display: none;
+        }
+        .menuMobile{
+          display: block;
+          position: absolute;
+          top: 25px;
+          right: 32px;
+        }
+      }
+      @media only screen and (min-width: 415px) and (max-width: 740px) {
+        .menu{
+          display: none;
+        }
+        .caixacabeçalho{
+          width: 100%;
+          height: 63px;
+          background-color: white;
+          opacity: 1;
+        }
+        .Logo{
+          display: none;
+        }
+        .Logomobile{
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 150px;
+        }
+        .caixatexto{
+          position: absolute;
+          top: 190px;
+          width: 440px;
+          height: 157px;
+          margin-left: 150px;
+          border-top: 0.5px solid white;
+          border-bottom: 0.5px solid white;
+          text-align: center;
+          line-height: 40px;
+        }
+        h1{
+          font-size: 30px;
+          margin-top: 37px;
+        }
+        p{
+          position: absolute;
+          top: 360px;
+          left: 150px;
+          right: 150px;
+          color: white;
+          font-size: 21px;
+          opacity: 0.7;
+          text-align: center;
+          line-height: 35px;
+          word-break: normal;
+        }
+        .menuMobile{
+          display: block;
+          position: absolute;
+          top: 25px;
+          right: 150px;
+        }
+        body{
+          background-image: url('desk_bgr_dark-1-mobile-min.jpg');
+          background-size: auto;
+          background-repeat: no-repeat;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header id="header" class="caixacabeçalho">
+      </header>
+      <nav class="menu">
+        <ul>
+          <li><a href="#consultoria">CONSULTORIA</a>
+            <ul>
+              <li> <a href="#">Consultoria de Marketing</a></li>
+              <li> <a href="#">Planejamento Estratégico</a></li>
+              <li> <a href="#">Plano de Marketing</a></li>
+              <li> <a href="#">Organizações e Processos</a></li>
+              <li> <a href="#">Análise de Mercado</a></li>
+            </ul>
+          </li>
+          <li><a href="#design">DESIGN</a>
+            <ul>
+              <li> <a href="#">Branding | Naming</a></li>
+              <li> <a href="#">Identidade Visual</a></li>
+              <li> <a href="#">Logo | Logotipo | Logomarca</a></li>
+              <li> <a href="#">Layout de Loja</a></li>
+              <li> <a href="#">Motion Design | Animação</a></li>
+            </ul>
+          </li>
+          <li><a href="#e-commerce">E-COMMERCE</a>
+            <ul>
+              <li> <a href="">Lojas Virtuais</a></li>
+              <li> <a href="">Integração com Marketplaces</a></li>
+              <li> <a href="">OpenCart</a></li>
+              <li> <a href="">Fotografia E-commerce</a></li>
+              <li> <a href="">Sistema de Pedido Online</a></li>
+            </ul>
+          </li>
+          <li><a href="marketingdigital">MARKETING DIGITAL</a>
+            <ul>
+              <li> <a href="">Growth Haking</a></li>
+              <li> <a href="">Links Patrocinados</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <nav class="menuMobile">
+        <a href=""><img src="menu.jpg" alt="Menu"></a>
+      </nav>
+        <div class="Logo">
+          <img src="Logo-site-reduzida-megalu.png" alt="Logo">
+        </div>
+        <div class="Logomobile">
+          <img src="Logo-site-reduzida-megalu-laranja.png" alt="Logo-laranja">
+        </div>
+        <div class="caixatexto">
+          <h1><span style="color: #e05600;">VENDAS</span> PARA O SEU NEGÓCIO!
+          </h1>
+        </div>
+        <p>Mais do que uma agência, uma verdadeira fábrica de clientes e inovações para sua empresa!</p>
+        <div id="serviços">
+          <a href="">SERVIÇOS</a>
+        </div>
+        <div id="contato">
+          <a href=""><img src="wpp.jpg" alt="WhatsApp"></a>
+        </div>
+      </div>
+  </body>
+</html>
